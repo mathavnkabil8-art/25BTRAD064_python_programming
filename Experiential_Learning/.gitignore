@@ -1,0 +1,60 @@
+# ==============================================================================
+# RouteIQ Git Exclusion Rules
+# ==============================================================================
+
+# Credentials & Environment Variables (CRITICAL: NEVER COMMIT SECRETS)
+.env
+.env.*
+!.env.example
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+venv_broken_backup/
+.venv_broken_backup/
+
+# Python Bytecode & Cache Files
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+
+# Testing, Quality & Coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE & Editor Configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build Artifacts & Executables
+build/
+dist/
+*.egg-info/
+*.spec
+
+# Local Databases, Logs & Personal Commute History (CRITICAL: NEVER COMMIT USER DATA)
+*.db
+*.sqlite
+*.sqlite3
+*.log
+commute_history.csv
+data/commute_history.csv
+data/commute_history.db
+
+# Generated Map HTML Artifacts
+*_map.html
+temp_map.html
+route_map.html
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
